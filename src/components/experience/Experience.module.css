@@ -1,0 +1,208 @@
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+    color: var(--color-text);
+    margin-top: 79px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 14px;
+    gap: 37px; /* Added gap to improve spacing */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.skills {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.skillImageContainer {
+    background-color: var(--color-secondary);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.skillImageContainer img {
+    width: 75px;
+}
+
+.skill p {
+    font-size: 25px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+}
+
+.history {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-sizing: border-box; /* Ensure padding doesn't affect layout */
+}
+
+.historyItem {
+    min-width: 70vw; 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+    background: #081327;
+    text-decoration: double;
+    border-radius: 10px;
+    padding: 24px;
+    box-sizing: border-box; /* Prevent overflow */
+}
+
+.historyItem:hover {
+    display: relative;
+    gap: 17px;
+    background: #19376d;
+    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+}
+
+.historyItem img:hover {
+    width: 50px;
+}
+
+.historyItemDetails {
+    font-family: var(--font-roboto);
+    text-align: center;
+    width: 100%; /* Ensure historyItemDetails takes up full width */
+    box-sizing: border-box; /* Prevent overflow */
+}
+
+.historyItemDetails h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0; 
+}
+
+.historyItemDetails p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.historyItemDetails ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 8px;
+    gap: 17px;
+    padding: 10px;
+    list-style-position: inside;
+    justify-content: space-between;
+    font-size: 25px;
+    list-style-type: circle;
+    margin-left: 8px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 830px) {
+    .container {
+        margin-left: 5%; /* Adjust margin for small screens */
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .skills {
+        width: 100%; /* Make skills take full width */
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .history {
+        width: 100%; /* Ensure history section takes full width */
+        gap: 9px;
+        padding: 15px; /* Reduce padding on mobile */
+    }
+
+    .historyItem {
+        width: 100%;  /* Ensure history item takes full width on small screens */
+        min-width: unset; /* Remove min-width to ensure it fits within parent */
+        flex-direction: column; /* Stack items vertically */
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+
+    .historyItem img {
+        width: 40px;  /* Adjust image size for small screens */
+    }
+
+    .historyItemDetails {
+        width: 100%; /* Ensure historyItemDetails takes up full width */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .historyItemDetails h3 {
+        font-size: 24px; /* Make title smaller for mobile */
+    }
+
+    .historyItemDetails p {
+        font-size: 14px; /* Make text smaller for mobile */
+    }
+
+    .historyItemDetails ul {
+        font-size: 20px; /* Make list items smaller for mobile */
+    }
+
+    .skill {
+        width: 45%;  /* Make skills items smaller to fit better on mobile */
+    }
+
+    .skillImageContainer {
+        width: 80px;  /* Smaller icons for mobile */
+        height: 80px;
+    }
+
+    .skillImageContainer img {
+        width: 50px;  /* Smaller images for mobile */
+    }
+
+    .skill p {
+        font-size: 18px; /* Smaller font for skills on mobile */
+    }
+}
+
+/* Global Box-sizing */
+* {
+    box-sizing: border-box; /* Include padding and border in element width/height */
+}

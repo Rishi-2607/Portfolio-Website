@@ -1,0 +1,18 @@
+[
+    {
+      "role": "Software Developer Intern",
+      "organisation": "CodSoft",
+      "startDate": "July, 2023",
+      "endDate": "August,2023",
+      "experiences": ["Worked on various front end projects", "Reduced load times by 50%"],
+      "imageSrc": "/assets/icons8-organization-100.png"
+    },
+    {
+      "role": "Frontend Developer",
+      "organisation": "CodeCasa",
+      "startDate": "August, 2023",
+      "endDate": "September, 2023",
+      "experiences": ["Worked on making responsive websites with enhanced user experience", "Designed the control panel"],
+      "imageSrc": "/assets/icons8-organization-100.png"
+    }
+  ]

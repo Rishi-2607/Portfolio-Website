@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Backroads App",
+      "imageSrc": "/assets/icons8-projects-64.png",
+      "description": " - A personalized travel companion app made to inspire users to explore new destinations.",
+      "skills": ["React", "HTML", "CSS"],
+      "demo": "https://backroads-trip-site.netlify.app/",
+      "source": "https://github.com/Rishi-2607/Backroads-Project"
+    },
+    {
+      "title": "Nike Shoes",
+      "imageSrc": "/assets/icons8-projects-64.png",
+      "description": " Prepared to showcase products in a modern, sleek way, encouraging users to engage with the brand and explore.",
+      "skills": ["React", "HTML", "CSS", "TailwindCSS"],
+      "demo": "https://nike-landing-page-r7k.netlify.app/",
+      "source": "https://github.com/Rishi-2607/Nike-Landing-Page"
+    },
+    {
+      "title": "Best-Sellers",
+      "imageSrc": "/assets/icons8-projects-64.png",
+      "description": "This is a project made to showcase the best-seller Amazon books in a responsive Web app.",
+      "skills": ["React", "HTML", "CSS","Bootstrap"],
+      "demo": "https://rishi7k-best-sellers.netlify.app/",
+      "source": "https://www.github.com"
+    }
+  ]
